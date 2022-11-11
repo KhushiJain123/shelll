@@ -1,0 +1,11 @@
+8. Write a shell script to check the user is login or not and say hello.
+#!/bin/bash
+echo enter username
+read name
+who > test
+if grep $name test
+then
+echo logged in
+else
+echo not logged in
+fi
